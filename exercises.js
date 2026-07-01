@@ -46,3 +46,58 @@ if (roomTemperature > 25) {
     console.log("Turning on the heater...");
 }
 
+// Exercise 6 - Login Toggle
+
+const isLoggedIn = true;
+
+const buttonText = isLoggedIn ? "Logout" : "Login";
+
+console.log(buttonText);
+
+// Exercise 7 - Traffic Light
+
+const lightColor = "green";
+
+switch (lightColor) {
+    case "red":
+        console.log("Stop!");
+        break;
+
+    case "yellow":
+        console.log("Slow down!");
+        break;
+
+    case "green":
+        console.log("Go!");
+        break;
+
+    default:
+        console.log("Invalid color.");
+}
+
+// Exercise 8 - Countdown Timer
+
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+console.log("Lift off!");
+
+// Exercise 9 - Number List
+
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i, "Even");
+    } else {
+        console.log(i, "Odd");
+    }
+}
+
+// Exercise 10 - Discount Function
+
+function applyDiscount(price, percentage) {
+    return price - (price * percentage / 100);
+}
+
+console.log(applyDiscount(100, 20));
+
